@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), url(raleway.ttf) format('truetype');
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, input { font: 100% Raleway; }
+
+main {
+    position: fixed;
+    top: 0;
+    left: calc(100% / 6);
+    height: 100%;
+    width: calc(200% / 3);
+    box-shadow: 0 0 1rem lightgray;
+}
+
+
+input:focus {
+    outline: 0;
+}
+
+form.config {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: inherit;
+    height: 3rem;
+    bottom: 3rem;
+    background: dimgray;
+}
+form.config input {
+    height: inherit;
+    width: 100%;
+    float: left;
+    padding: 1rem;
+    border: 0;
+    background: transparent;
+    color: white;
+}
+
+ul#messages {
+    position: fixed;
+    top: 0;
+    width: inherit;
+    height: calc(100% - 3rem);
+    overflow: scroll;
+    list-style: none;
+    background: white;
+}
+ul#messages li { padding: 0.5rem 1rem; }
+ul#messages li:nth-child(odd) { background: lightgray; }
+
+form.tweet {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    height: 3rem;
+    background: #000000;
+}
+
+form.tweet input {
+    height: inherit;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+form.tweet input[type=text] {
+    float: left;
+    padding: 1rem;
+    border: 0;
+    width: calc(100% - 8rem);
+    background: transparent;
+    color: white;
+}
+
+form.tweet input[type=button], form input[type=submit] {
+    float: right;
+    border: 0;
+    font-weight: bold;
+}
+
+form.tweet input[type=button] {
+    width: 3rem;
+    background: transparent;
+    color: white;
+}
+
+form.tweet input[type=submit] {
+    width: 5rem;
+    background: red;
+    color: white;
+}
+
+::-webkit-input-placeholder{
+    font-style: italic;
+    font-weight: 100;
+}
+:-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+}
+::-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+    main {
+        left: 0;
+        width: 100%;
+    }
+}

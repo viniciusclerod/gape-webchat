@@ -1,3 +1,7 @@
+# Project metadata
+.idea
+.project
+
 # Logs
 logs
 *.log

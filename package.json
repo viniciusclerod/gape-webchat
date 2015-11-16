@@ -1,0 +1,11 @@
+{
+  "name": "gape-webchat",
+  "version": "0.1.0",
+  "description": "Um exemplo de webapp em socket.io",
+  "main": "server.js",
+  "author": "Vinicius Rodrigues",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  }
+}

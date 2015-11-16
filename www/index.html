@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>GAPE Webchat</title>
+    <link rel="stylesheet" href="/style/chat.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script/main.js"></script>
+</head>
+<body>
+<main>
+    <form class="config">
+        <input type="text" name="name" autocomplete="off" placeholder="Digite seu nome">
+    </form>
+    <ul id="messages"></ul>
+    <form class="tweet">
+        <input type="text" name="message" autocomplete="off" autofocus
+               placeholder="Digite sua mensagem" />
+        <input type="submit" value="Enviar">
+        <input type="button" class="config" value="▲">
+    </form>
+</main>
+</body>
+</html>
