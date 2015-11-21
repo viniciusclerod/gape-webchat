@@ -41,7 +41,7 @@ form.config input {
     color: white;
 }
 
-ul#messages {
+ul#tweets {
     position: fixed;
     top: 0;
     width: inherit;
@@ -50,8 +50,8 @@ ul#messages {
     list-style: none;
     background: white;
 }
-ul#messages li { padding: 0.5rem 1rem; }
-ul#messages li:nth-child(odd) { background: lightgray; }
+ul#tweets li { padding: 0.5rem 1rem; }
+ul#tweets li:nth-child(odd) { background: lightgray; }
 
 form.tweet {
     position: fixed;

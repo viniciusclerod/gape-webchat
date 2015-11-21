@@ -5,7 +5,7 @@ var $ = function(selector) { return document.querySelector(selector); };
 window.onload = function(){
 
     var me = 'Alguém';
-    var messages = $('#messages');
+    var messages = $('#tweets');
     var config = $('form.config');
 
     $('form.tweet').onsubmit = function(){
@@ -42,7 +42,8 @@ window.onload = function(){
     socket.on('chat message', function(tweet){
         console.log(tweet);
         var li = document.createElement('li');
-        li.innerHTML = '<strong>' + tweet.name + '</strong> : <span></span>' + tweet.message + '<span>';
+        li.innerHTML = '<strong>' + tweet.name + '</strong> : <span></span>';
+        li.querySelector('span').innerText = tweet.message;
         //li.innerText = message;
         messages.appendChild(li);
         messages.scrollTop = messages.scrollHeight;
